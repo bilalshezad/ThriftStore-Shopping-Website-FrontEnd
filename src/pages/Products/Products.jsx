@@ -9,7 +9,8 @@ import ConverseSection from './ConverseSection'
 import SlidesSection from './SlidesSection'
 import UrbanShoesSection from './UrbanShoesSection'
 import banner4 from "../../../assets/banner4.png";
-import banner5 from "../../../assets/banner5.ong";
+import banner5 from "../../../assets/banner5.png";
+
 export default function Products() {
   const productslider = [
     {

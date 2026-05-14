@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import style from './style.module.css'
-import logo from '../../assets/download.png'
+import logo from '../../../assets/download.png'
 import { ShoppingCart, User, LogOut, Menu, X } from 'lucide-react'
 import { useCart } from '../../context/useCart'
 import { useToast } from '../../context/useToast'

@@ -6,7 +6,7 @@ import ProductCard from '../../components/cards2/ProductCard'
 export default function ConverseSection() {
   const [converse, setconverse] = useState([]);
   const getdata = async()=>{
-    const response = await fetch('http://localhost:5000/products/getconverse');
+    const response = await fetch('https://thrift-store-shopping-website-backe.vercel.app/products/getconverse');
     const data = await response.json();
     setconverse(data)
     console.log(setconverse);

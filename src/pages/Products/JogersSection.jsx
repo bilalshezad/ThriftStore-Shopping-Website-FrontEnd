@@ -6,7 +6,7 @@ import ProductCard from '../../components/cards2/ProductCard';
 export default function JogersSection() {
   const [Jogers, setJogers] = useState([]);
   const getdata = async ()=>{
-    const response = await fetch('http://localhost:5000/products/getjogers') 
+    const response = await fetch('https://thrift-store-shopping-website-backe.vercel.app/products/getjogers') 
     const data =await response.json()
     setJogers(data)
     console.log(Jogers)

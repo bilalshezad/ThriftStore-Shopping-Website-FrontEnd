@@ -83,7 +83,7 @@ export default function ProductDetail() {
         customer: buyerInfo,
       };
 
-      const res = await fetch('http://localhost:5000/orders/create', {
+      const res = await fetch('https://thrift-store-shopping-website-backe.vercel.app/orders/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ export default function ProductDetail() {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/products/${id}`);
+        const res = await fetch(`https://thrift-store-shopping-website-backe.vercel.app/products/${id}`);
         const data = await res.json();
         const rawProduct = data.product || data;
         

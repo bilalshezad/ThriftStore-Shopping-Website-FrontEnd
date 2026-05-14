@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function UrbanShoesSection() {
   const [UrbanShoes, setUrbanShoes] = useState([])
   const getdata = async ()=>{
-    const response = await fetch(`http://localhost:5000/products/geturbanshoes`)
+    const response = await fetch(`https://thrift-store-shopping-website-backe.vercel.app/products/geturbanshoes`)
     const data = await response.json()
     setUrbanShoes(data)
     console.log(UrbanShoes)

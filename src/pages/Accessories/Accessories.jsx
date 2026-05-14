@@ -45,7 +45,7 @@ export default function Accessories() {
   const fetchAccessories = async () => {
     try {
       const response = await fetch(
-        'http://localhost:5000/getallaccessories'
+        'https://thrift-store-shopping-website-backe.vercel.app/getallaccessories'
       );
 
       const data = await response.json();

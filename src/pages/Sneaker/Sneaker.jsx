@@ -11,13 +11,13 @@ export default function Sneaker() {
   const [sizes, setsize] = useState([])
   
   const getgender = async()=>{
-    const response = await fetch('http://localhost:5000/products/getgender')
+    const response = await fetch('https://thrift-store-shopping-website-backe.vercel.app/products/getgender')
     const data = await response.json();
     setgender(data)
     console.log(data)
   }
   const getdata = async (selectedGender = 'All' , selectedSize = null)=>{
-    let query = `http://localhost:5000/products/getallsneakers?Gender=${selectedGender}`;
+    let query = `https://thrift-store-shopping-website-backe.vercel.app/products/getallsneakers?Gender=${selectedGender}`;
     if(selectedSize){
       query += `&Size=${selectedSize}`
     }
@@ -26,7 +26,7 @@ export default function Sneaker() {
     setsneakersCard(data)
   }
   const getsize = async()=>{
-    const response = await fetch(`http://localhost:5000/products/getsize`)
+    const response = await fetch(`https://thrift-store-shopping-website-backe.vercel.app/products/getsize`)
     const data  = await response.json();
     setsize(data)
   }

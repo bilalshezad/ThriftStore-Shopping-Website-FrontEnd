@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function SneakersSection() {
   const [sneakersCard, setsneakersCard] = useState([])
   const getdata = async ()=>{
-    const response = await fetch(`http://localhost:5000/products/getsneakers`)
+    const response = await fetch(`https://thrift-store-shopping-website-backe.vercel.app/products/getsneakers`)
     const data = await response.json()
     setsneakersCard(data)
     console.log(sneakersCard)

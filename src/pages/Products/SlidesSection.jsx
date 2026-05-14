@@ -6,7 +6,7 @@ import ProductCard from '../../components/cards2/ProductCard';
 export default function SlidesSection() {
   const [slides, setSlides] = useState([]);
   const getdata = async ()=>{
-    const response = await fetch('http://localhost:5000/products/getslides') 
+    const response = await fetch('https://thrift-store-shopping-website-backe.vercel.app/products/getslides') 
     const data =await response.json()
     setSlides(data)
     console.log(slides)

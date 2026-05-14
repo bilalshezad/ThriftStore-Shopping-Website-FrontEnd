@@ -31,7 +31,7 @@ function App() {
       try {
         const user = JSON.parse(savedUser);
         if (user.id) {
-          const response = await fetch(`http://localhost:5000/user/check-existence/${user.id}`);
+          const response = await fetch(`https://thrift-store-shopping-website-backe.vercel.app/user/check-existence/${user.id}`);
           
           if (response.status === 404) {
             // USER DELETED - SHOW STYLISH ALERT

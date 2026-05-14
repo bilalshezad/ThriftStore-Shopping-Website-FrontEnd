@@ -4,23 +4,26 @@ import Card from '../../components/cards/Card'
 import style from './home.module.css'
 import Reviews from '../../components/ReviewsCards/Reviews'
 import Footer from '../../components/footer/footer';
+import banner1 from "../../../assets/banner1.png";
+import banner2 from "../../../assets/banner2.png";
+import banner3 from "../../../assets/banner3.png";
 function Home() {
   const homeSlides = [
   {
     id: 1,
-    image: 'http://localhost:5173/src/assets/banner2.png',
+    image: banner2,
     title: 'Air Jordan 1',
     description: 'Iconic sneaker for collectors'
   },
   {
     id: 2,
-    image: 'http://localhost:5173/src/assets/banner1.png',
+    image: banner1,
     title: 'Premium Collection',
     description: 'High-quality vintage shoes'
   },
   {
     id: 3,
-    image: 'http://localhost:5173/src/assets/banner3.png',
+    image: banner3,
     title: 'Rare Finds',
     description: 'Limited edition thrift store items'
   },

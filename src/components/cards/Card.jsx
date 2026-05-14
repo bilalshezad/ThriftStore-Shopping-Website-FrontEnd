@@ -2,6 +2,11 @@ import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import style from "./card.module.css";
+import sneakers from "../../../assets/sneakers.mp4";
+import jogers from "../../../assets/jogers.mp4";
+import urban1 from "../../../assets/urban1.mp4";
+import converse from "../../../assets/converse.mp4";
+import slides from "../../../assets/slides.mp4";
 
 const ProductSlider = () => {
   const [index, setIndex] = useState(2);
@@ -9,11 +14,11 @@ const ProductSlider = () => {
   const containerRef = useRef(null);
 
   const products = [
-    { video: "/src/assets/sneakers.mp4", title: "Sneakers" },
-    { video: "/src/assets/jogers.mp4", title: "Jogers" },
-    { video: "/src/assets/urban1.mp4", title: "UrbanShoes" },
-    { video: "/src/assets/converse.mp4", title: "Converse" },
-    { video: "/src/assets/slides.mp4", title: "Slides" }
+    { video: sneakers, title: "Sneakers" },
+    { video: jogers, title: "Jogers" },
+    { video: urban1, title: "UrbanShoes" },
+    { video: converse, title: "Converse" },
+    { video: slides, title: "Slides" }
   ];
 
   const next = () =>

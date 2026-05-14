@@ -8,16 +8,18 @@ import JogersSection from './JogersSection'
 import ConverseSection from './ConverseSection'
 import SlidesSection from './SlidesSection'
 import UrbanShoesSection from './UrbanShoesSection'
+import banner4 from "../../../assets/banner4.png";
+import banner5 from "../../../assets/banner5.ong";
 export default function Products() {
   const productslider = [
     {
     id: 1,
-    image: '/src/assets/banner4.png',
+    image: banner4,
     },
 
     {
     id: 2,
-    image: '/src/assets/banner5.png',
+    image: banner5,
     }
   ]
  

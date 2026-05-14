@@ -8,19 +8,19 @@ function Home() {
   const homeSlides = [
   {
     id: 1,
-    image: '/src/assets/banner2.png',
+    image: 'http://localhost:5173/src/assets/banner2.png',
     title: 'Air Jordan 1',
     description: 'Iconic sneaker for collectors'
   },
   {
     id: 2,
-    image: '/src/assets/banner1.png',
+    image: 'http://localhost:5173/src/assets/banner1.png',
     title: 'Premium Collection',
     description: 'High-quality vintage shoes'
   },
   {
     id: 3,
-    image: '/src/assets/banner3.png',
+    image: 'http://localhost:5173/src/assets/banner3.png',
     title: 'Rare Finds',
     description: 'Limited edition thrift store items'
   },

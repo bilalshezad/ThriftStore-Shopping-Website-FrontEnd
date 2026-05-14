@@ -67,7 +67,7 @@ export default function CartSidebar() {
         quantity: item.quantity,
       }));
 
-      const res = await fetch('http://localhost:5000/orders/create', {
+      const res = await fetch('https://thrift-store-shopping-website-backe.vercel.app/orders/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ products, customer: buyerInfo }),

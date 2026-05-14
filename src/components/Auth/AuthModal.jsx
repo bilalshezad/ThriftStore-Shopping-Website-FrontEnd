@@ -25,7 +25,7 @@ const AuthModal = ({ isOpen, onClose }) => {
     try {
       const endpoint = isLogin ? '/user/login' : '/user/register';
       // Adjust URL if your backend runs on a different port
-      const { data } = await axios.post(`http://localhost:5000${endpoint}`, formData);
+      const { data } = await axios.post(`https://thrift-store-shopping-website-backe.vercel.app${endpoint}`, formData);
       
       if (data.success) {
         if (isLogin) {

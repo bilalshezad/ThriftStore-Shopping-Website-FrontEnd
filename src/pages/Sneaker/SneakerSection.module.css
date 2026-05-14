@@ -1,0 +1,5 @@
+.cardsparent{
+  display: flex;
+  background: #000;
+  justify-content: center;
+}

@@ -1,0 +1,32 @@
+.categories {
+  background: #000;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top:80px;
+  cursor: pointer;
+  padding-bottom: 20px; 
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  /* display: inline-block; */
+}
+
+/* underline exactly niche */
+.categories::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transform: translateX(-50%);
+  transition: width 0.4s ease;
+}
+
+/* hover pe underline */
+.categories:hover::after {
+  width: 90%;
+}

@@ -80,8 +80,10 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollContainer {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .sizeBtn {
@@ -101,4 +103,36 @@
   background-color: #000 !important;
   color: #fff !important;
   border-color: #000 !important;
+}
+
+@media (max-width: 768px) {
+  .container {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 5px;
+    gap: 15px;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .divider {
+    flex-shrink: 0;
+  }
+
+  .genderSection {
+    flex-shrink: 0;
+  }
+
+  .sizeSection {
+    flex-shrink: 0;
+    overflow: visible;
+  }
+
+  .scrollContainer {
+    overflow-x: visible;
+    flex-wrap: nowrap;
+  }
 }

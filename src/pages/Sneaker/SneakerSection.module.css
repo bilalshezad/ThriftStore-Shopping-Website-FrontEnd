@@ -1,5 +1,7 @@
-.cardsparent{
+.cardsparent {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   background: #000;
   justify-content: center;
 }

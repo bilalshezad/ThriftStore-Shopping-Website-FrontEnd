@@ -13,7 +13,7 @@ export default function ProductCard(props) {
   const { showToast } = useToast();
 
   useEffect(() => {
-    if(!images || images.length === 0) return;
+    if (!images || images.length === 0) return;
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
     }, 2500);
@@ -22,7 +22,7 @@ export default function ProductCard(props) {
   }, [images]);
 
   return (
-    <motion.div 
+    <motion.div
       className="group cursor-pointer w-[300px] mx-4 mb-8"
       whileHover={{ y: -10 }}
       transition={{ type: "spring", stiffness: 900 }}
@@ -59,15 +59,15 @@ export default function ProductCard(props) {
           </div>
         )}
 
-        <motion.button 
+        <motion.button
           whileTap={{ scale: 0.95 }}
           onClick={(e) => {
             e.stopPropagation();
-            addToCart({ 
-              id: props.id, 
-              name: props.h1, 
-              price: props.price, 
-              image: images ? images[0] : "" 
+            addToCart({
+              id: props.id,
+              name: props.h1,
+              price: props.price,
+              image: images ? images[0] : ""
             });
             showToast('Item added to cart!', 'success');
           }}
